@@ -1,0 +1,20 @@
+#loanApplicationsList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #loanApplicationsList li {
+    margin-bottom: 10px;
+  }
+  #loanApplicationForm {
+    margin-top: 20px;
+  }
+  #loanApplicationsList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  #loanApplicationsList li {
+    margin-bottom: 5px;
+  }

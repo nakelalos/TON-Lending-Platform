@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>TON Lending Platform</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>Welcome to TON Lending Platform</h1>
+
+      <!-- Registration Form -->
+      <h2>Register</h2>
+      <form id="registrationForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required /><br />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required /><br />
+
+        <button type="submit">Register</button>
+      </form>
+      <button id="loginButton">Log In with Telegram</button>
+      <button onclick="window.location.href = '/login';">Login with Auth0</button>
+      <script async src="https://telegram.org/js/telegram-widget.js?7"
+              data-telegram-login="t.me/lendtonbot"
+              data-size="large"
+              data-radius="10"
+              data-auth-url="https://example.com/authenticate">
+        <a href="/protected">Go to Protected Page</a>
+      </script>
+
+      <!-- Login Form -->
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="loginUsername">Username:</label>
+        <input type="text" id="loginUsername" required /><br />
+
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" required /><br />
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <script src="src/index.ts"></script>
+  </body>
+</html>
